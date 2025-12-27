@@ -1,4 +1,5 @@
 local_backend: true
+local_backend_url: /api
 backend:
   name: github
   repo: cleviorio/cafe-template
