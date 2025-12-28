@@ -3,3 +3,17 @@ backend:
   repo: cleviorio/cafe-template
   branch: main
   base_url: https://auth-cafe.sophocleschalk.workers.dev
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/home.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

@@ -1,8 +1,0 @@
-{
-  "items": [
-    {"name": "Espresso", "price": "€2.20"},
-    {"name": "Cappuccino", "price": "€3.00"},
-    {"name": "Freddo", "price": "€3.20"},
-    {"name": "Croissant", "price": "€2.50"}
-  ]
-}
