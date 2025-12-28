@@ -1,5 +1,4 @@
 ---
 title: Home
 ---
-
-Welcome to our cafe ☕
+Welcome to our  SUPER! cafe ☕
