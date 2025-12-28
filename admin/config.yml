@@ -10,10 +10,23 @@ public_folder: "/uploads"
 collections:
   - name: "pages"
     label: "Pages"
+    folder: "content/pages"
+    create: false
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Site Settings"
     files:
-      - file: "content/home.md"
-        label: "Home"
-        name: "home"
+      - file: "content/settings/site.md"
+        label: "General"
+        name: "general"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Site name", name: "site_name", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "City", name: "city", widget: "string" }
