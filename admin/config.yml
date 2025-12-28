@@ -1,37 +1,19 @@
-local_backend: true
-local_backend_url: /api
 backend:
   name: github
   repo: cleviorio/cafe-template
   branch: main
+  base_url: https://sveltia-cms-auth.sophocleschalk.workers.dev
 
-media_folder: "assets/images/uploads"
-public_folder: "/assets/images/uploads"
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "pages"
     label: "Pages"
     files:
-      - name: "home"
-        label: "Homepage"
-        file: "content/home.json"
+      - file: "content/home.md"
+        label: "Home"
+        name: "home"
         fields:
-          - {label: "Cafe name", name: "cafeName", widget: "string"}
-          - {label: "Hero title", name: "heroTitle", widget: "string"}
-          - {label: "Hero subtitle", name: "heroSubtitle", widget: "text"}
-          - {label: "Phone", name: "phone", widget: "string", required: false}
-          - {label: "Address", name: "address", widget: "string", required: false}
-
-  - name: "menu"
-    label: "Menu"
-    files:
-      - name: "menuItems"
-        label: "Menu items"
-        file: "content/menu.json"
-        fields:
-          - label: "Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Price", name: "price", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
